@@ -81,7 +81,7 @@ body {
   padding-top: 94px;
 }
 .header-image {
-  background: url(../img/header/header_bg.jpg) center center/cover no-repeat;
+  background: url(../img/header_bg.jpg) center center/cover no-repeat;
   position: relative;
 }
 .header-image::before {
