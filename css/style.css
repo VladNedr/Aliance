@@ -177,17 +177,16 @@ body {
 .header-features {
   position: relative;
   display: flex;
-  min-height: 5rem;
+  min-height: 10.5rem;
   margin-top: 6.25rem;
-  margin-bottom: 0;
   list-style: none;
   padding: 0;
 }
 .header-features-item {
-  padding: 1.875rem 3.125rem;
+  padding: 1.75rem 3.125rem;
   border: 1px solid rgba(235, 235, 240, 0.2);
   width: 18rem;
-  min-height: 100%;
+  height: auto;
 }
 .header-features-text {
   color: #fff;
