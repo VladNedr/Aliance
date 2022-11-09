@@ -350,6 +350,48 @@ body {
   right: 0;
   bottom: 0;
 }
+.blocks {
+  display: flex;
+  flex-wrap: wrap;
+}
+.brand-blocks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-basis: 50%;
+  border: 1px solid #EBEBF0;
+  padding: 3.125rem;
+  gap: 3.125rem;
+  text-decoration: none;
+  transition: 0.2s all;
+  cursor: pointer;
+}
+.brand-blocks:hover {
+  border: 3px solid #5C8EE6;
+}
+.agtech-brand, .logo-brand {
+  flex-shrink: 0;
+  width: 140px;
+  height: 121px;
+}
+.brand-title {
+  font-weight: 400;
+  font-size: 1.75rem;
+  line-height: 160%;
+  color: #292D33;
+  margin: 0;
+  margin-bottom: .625rem;
+}
+.brand-blocks:hover .brand-title {
+  color: #5C8EE6;
+}
+.brand-text {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 160%;
+  color: #828A99;
+  margin: 0;
+}
 
 @media ( max-width: 1700px) {
   html {
@@ -561,6 +603,12 @@ body {
   .steps {
     gap: 0.4rem;
   }
+  .brand-blocks {
+    flex-basis: 100%;
+  }
+  .agtech-brand, .logo-brand {
+    flex-shrink: 0.5;
+  }
 }
 @media (max-width: 768px) {
   .container {
@@ -575,6 +623,9 @@ body {
   }
   .card {
     flex-basis: 100%;
+  }
+  .agtech-brand, .logo-brand {
+    flex-shrink: 0.8;
   }
 }
 @media (max-width: 576px) {
@@ -632,4 +683,4 @@ body {
   .steps {
     gap: 0rem;
   }
-}   
+}
