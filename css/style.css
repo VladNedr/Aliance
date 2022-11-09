@@ -370,9 +370,16 @@ body {
   border: 3px solid #5C8EE6;
 }
 .agtech-brand, .logo-brand {
+  fill: #828A99;
   flex-shrink: 0;
   width: 140px;
   height: 121px;
+}
+.brand-blocks:hover .agtech-brand {
+  fill: #5C8EE6;
+}
+.brand-blocks:hover .logo-brand {
+  fill: #5C8EE6;
 }
 .brand-title {
   font-weight: 400;
