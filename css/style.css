@@ -129,6 +129,9 @@ body {
   height: 100%;
   padding: 1.5625rem 2.5rem;
 }
+.navbar-button:hover {
+  background: #1b57bf;
+}
 .navbar-button .button-icon {
   display: none;
 }
@@ -179,6 +182,9 @@ body {
 }
 .header-button {
   padding: 1.625rem 3.75rem;
+}
+.header-button:hover {
+  background: #1b57bf;
 }
 .slider-buttons {
   display: none;
