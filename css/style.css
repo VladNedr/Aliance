@@ -123,6 +123,7 @@ body {
   padding: 1.5625rem 3.75rem;
   border: none;
   cursor: pointer;
+  transition: background 0.5s;
 }
 .navbar-button {
   flex-shrink: 0;
@@ -378,8 +379,8 @@ body {
 .agtech-brand, .logo-brand {
   fill: #828A99;
   flex-shrink: 0;
-  width: 140px;
-  height: 121px;
+  width: 11.25rem;
+  height: 11.25rem;
 }
 .brand-blocks:hover .agtech-brand {
   fill: #5C8EE6;
