@@ -293,7 +293,7 @@ body {
   margin-top: .625rem;
   margin-bottom: 1rem;
 }
-.steps-link {
+.button-link {
   display: flex;
   align-items: center;
   font-weight: 600;
@@ -302,7 +302,7 @@ body {
   color: #5C8EE6;
   text-decoration: none;
 }
-.steps-link::before {
+.button-link::before {
   content: "";
   height: .0625rem;
   width: 2.5rem;
@@ -310,7 +310,7 @@ body {
   margin-right: 1rem;
   transition: width 0.2s;
 }
-.steps-link:hover::before {
+.button-link:hover::before {
   width: 3.75rem;
 }
 .production {
@@ -422,7 +422,36 @@ body {
   margin: 0;
   grid-area: text;
 }
-
+.founder {
+  position: relative;
+  padding-top: 4.5rem;
+}
+.founder-photo {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 45%;
+  min-height: 41.25rem;
+  object-fit: cover;
+}
+.founder-content-wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+.founder-content {
+  max-width: 44rem;
+}
+/* .founder-title {
+  margin-top: 3rem;
+} */
+.founder-text {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 160%;
+  color: #828A99;
+  margin: 0;
+  margin-bottom: 1.875rem;
+}
 @media ( max-width: 1700px) {
   html {
     font-size: 14px;
@@ -457,6 +486,18 @@ body {
     width: 1.25rem;
     height: 1.25rem;
   }
+  .founder {
+    padding-top: 2.5rem;
+  }
+  .founder-content {
+    max-width: 40rem;
+  }
+   .founder-title {
+    margin-bottom: 1.5625rem;
+  }
+  .founder-text {
+    margin-bottom: 1.25rem;
+  }
 }
 @media ( max-width: 1200px) {
   html {
@@ -489,6 +530,9 @@ body {
   }
   .brand-blocks {
     grid-template-columns: auto auto;
+  }
+  .founder-content {
+    max-width: 35rem;
   }
 }
 @media (max-width: 1024px) {
@@ -654,6 +698,12 @@ body {
   .blocks {
     flex-direction: column;
   }
+  .founder-content {
+    max-width: 30rem;
+  }
+  .founder-text {
+    font-size: 0.9rem;
+  }
 }
 @media (max-width: 768px) {
   .container {
@@ -668,6 +718,23 @@ body {
   }
   .card {
     flex-basis: 100%;
+  }
+  .founder {
+    padding: 0;
+  }
+  .founder-photo {
+    position: relative;
+    width: 100%;
+    margin-bottom: 3.125rem;
+  }
+  .founder-content-wrapper {
+    justify-content: center;
+  }
+  .founder-content {
+    max-width: 40rem;
+  }
+  .founder-text {
+    font-size: 1rem;
   }
 }
 @media (max-width: 576px) {
@@ -738,7 +805,7 @@ body {
     font-size: 1.3rem;
     margin-bottom: 2rem;
   }
-  .steps-link {
+  .button-link {
     font-size: 1.2rem;
   }
   .steps {
@@ -785,5 +852,15 @@ body {
   }
   .span-brand {
     display: none;
+  }
+  .founder {
+    margin-top: 6rem;
+  }
+  .founder-photo {
+    min-height:18.4375rem;
+    margin-bottom: 4.7rem;
+  }
+  .founder-text {
+    font-size: 1.240rem;
   }
 }
