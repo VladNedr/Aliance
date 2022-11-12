@@ -243,7 +243,7 @@ body {
   margin-bottom: 9.375rem;
 }
 .section-light {
- margin: 9.375rem 0rem 9.375rem 1.375rem;
+ margin: 8.375rem 0rem 6.850rem 1.375rem;
 }
 .section-title {
   font-family: 'Bebas Neue Book';
@@ -251,13 +251,13 @@ body {
   font-size: 3.75rem;
   color: #292D33;
   margin-top: 1.875rem;
-  margin-bottom: 3.125rem;
+  margin-bottom: 2.125rem;
 }
 .steps {
   display: flex;
   list-style: none;
   padding: 0;
-  gap: 1.875rem;
+  gap: 4.5rem;
 }
 .steps-item {
   width: 20.625rem ;
@@ -291,7 +291,7 @@ body {
   line-height: 160%;
   color: #828A99;
   margin-top: .625rem;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1rem;
 }
 .steps-link {
   display: flex;
@@ -313,6 +313,12 @@ body {
 .steps-link:hover::before {
   width: 3.75rem;
 }
+.production {
+  margin: 6rem 0 6rem 1.375rem
+}
+.production-title {
+  margin-bottom: 3.6rem;
+}
 .cards {
   display: flex;
   flex-wrap: wrap;
@@ -331,7 +337,7 @@ body {
   color: #5C8EE6;
 }
 .card-content {
-  padding: 2.5rem 3.125rem;
+  padding: 1.875rem 3.125rem;
 }
 .card-title {
   font-weight: 400;
@@ -356,6 +362,12 @@ body {
   z-index: 0;
   right: 0;
   bottom: 0;
+}
+.brand {
+  margin: 7.4rem 0 6rem 1.375rem
+}
+.section-title-brand {
+  margin-bottom: 3.5rem;
 }
 .blocks {
   display: flex;
@@ -709,6 +721,9 @@ body {
   .seporator {
     width: 100px;
   }
+  .section-light {
+    margin-top: 9.375rem;
+  }
   .section-title {
     margin-bottom: 2rem;
   }
@@ -740,17 +755,32 @@ body {
   }
   .production {
     margin-top: 10rem;
+    margin-left: 0;
   }
   .production-title {
-    margin-bottom: 2.5rem;
+    margin-bottom: 3rem;
   }
   .card-content {
-    padding: 2.5rem;
+    padding: 2rem 2.4rem;
   }
   .card-title {
     font-size: 1.8rem;
   }
   .card-text {
+    font-size: 1.2rem;
+    margin-bottom: 25.5rem;
+  }
+  .brand {
+    margin-top: 9rem;
+    margin-left: 0;
+  }
+  .section-title-brand {
+    margin-bottom: 3rem;
+  }
+  .brand-blocks {
+    padding: 2.2rem;
+  }
+  .brand-text {
     font-size: 1.2rem;
   }
   .span-brand {
