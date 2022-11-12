@@ -362,25 +362,27 @@ body {
   flex-wrap: wrap;
 }
 .brand-blocks {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   flex-basis: 50%;
   border: 1px solid #EBEBF0;
   padding: 3.125rem;
-  gap: 3.125rem;
+  column-gap: 3.125rem;
   text-decoration: none;
   transition: 0.2s all;
   cursor: pointer;
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  grid-template-rows: auto 2fr;
+  grid-template-areas: 
+  "logo title title"
+  "logo text text";
 }
 .brand-blocks:hover {
   border: 3px solid #5C8EE6;
 }
 .agtech-brand, .logo-brand {
   fill: #828A99;
-  flex-shrink: 0;
-  width: 11.25rem;
-  height: 11.25rem;
+  width: 100%;
+  grid-area: logo;
 }
 .brand-blocks:hover .agtech-brand {
   fill: #5C8EE6;
@@ -395,6 +397,7 @@ body {
   color: #292D33;
   margin: 0;
   margin-bottom: .625rem;
+  grid-area: title;
 }
 .brand-blocks:hover .brand-title {
   color: #5C8EE6;
@@ -405,6 +408,7 @@ body {
   line-height: 160%;
   color: #828A99;
   margin: 0;
+  grid-area: text;
 }
 
 @media ( max-width: 1700px) {
@@ -470,6 +474,9 @@ body {
   }
   .card {
     flex-basis: 50%;
+  }
+  .brand-blocks {
+    grid-template-columns: auto auto;
   }
 }
 @media (max-width: 1024px) {
@@ -632,11 +639,8 @@ body {
   .steps {
     gap: 0.4rem;
   }
-  .brand-blocks {
-    flex-basis: 100%;
-  }
-  .agtech-brand, .logo-brand {
-    flex-shrink: 0.5;
+  .blocks {
+    flex-direction: column;
   }
 }
 @media (max-width: 768px) {
@@ -652,9 +656,6 @@ body {
   }
   .card {
     flex-basis: 100%;
-  }
-  .agtech-brand, .logo-brand {
-    flex-shrink: 0.8;
   }
 }
 @media (max-width: 576px) {
@@ -692,6 +693,9 @@ body {
   }
   .steps {
     gap: .25rem;
+  }
+  .brand-blocks {
+    grid-template-areas: "logo title" "text text";
   }
 }
 @media (max-width: 425px) {
