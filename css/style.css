@@ -243,7 +243,7 @@ body {
   margin-bottom: 9.375rem;
 }
 .section-light {
- margin: 9.375rem 0rem 9.375rem 1.375rem;
+ margin: 8.375rem 0rem 6.850rem 1.375rem;
 }
 .section-title {
   font-family: 'Bebas Neue Book';
@@ -251,13 +251,13 @@ body {
   font-size: 3.75rem;
   color: #292D33;
   margin-top: 1.875rem;
-  margin-bottom: 3.125rem;
+  margin-bottom: 2.125rem;
 }
 .steps {
   display: flex;
   list-style: none;
   padding: 0;
-  gap: 1.875rem;
+  gap: 4.5rem;
 }
 .steps-item {
   width: 20.625rem ;
@@ -291,9 +291,9 @@ body {
   line-height: 160%;
   color: #828A99;
   margin-top: .625rem;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1rem;
 }
-.steps-link {
+.button-link {
   display: flex;
   align-items: center;
   font-weight: 600;
@@ -302,7 +302,7 @@ body {
   color: #5C8EE6;
   text-decoration: none;
 }
-.steps-link::before {
+.button-link::before {
   content: "";
   height: .0625rem;
   width: 2.5rem;
@@ -310,8 +310,14 @@ body {
   margin-right: 1rem;
   transition: width 0.2s;
 }
-.steps-link:hover::before {
+.button-link:hover::before {
   width: 3.75rem;
+}
+.production {
+  margin: 6rem 0 6rem 1.375rem
+}
+.production-title {
+  margin-bottom: 3.6rem;
 }
 .cards {
   display: flex;
@@ -331,7 +337,7 @@ body {
   color: #5C8EE6;
 }
 .card-content {
-  padding: 2.5rem 3.125rem;
+  padding: 1.875rem 3.125rem;
 }
 .card-title {
   font-weight: 400;
@@ -357,30 +363,38 @@ body {
   right: 0;
   bottom: 0;
 }
+.brand {
+  margin: 7.4rem 0 6rem 1.375rem
+}
+.section-title-brand {
+  margin-bottom: 3.5rem;
+}
 .blocks {
   display: flex;
   flex-wrap: wrap;
 }
 .brand-blocks {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   flex-basis: 50%;
   border: 1px solid #EBEBF0;
   padding: 3.125rem;
-  gap: 3.125rem;
+  column-gap: 3.125rem;
   text-decoration: none;
   transition: 0.2s all;
   cursor: pointer;
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  grid-template-rows: auto 2fr;
+  grid-template-areas: 
+  "logo title title"
+  "logo text text";
 }
 .brand-blocks:hover {
   border: 3px solid #5C8EE6;
 }
 .agtech-brand, .logo-brand {
   fill: #828A99;
-  flex-shrink: 0;
-  width: 11.25rem;
-  height: 11.25rem;
+  width: 100%;
+  grid-area: logo;
 }
 .brand-blocks:hover .agtech-brand {
   fill: #5C8EE6;
@@ -395,6 +409,7 @@ body {
   color: #292D33;
   margin: 0;
   margin-bottom: .625rem;
+  grid-area: title;
 }
 .brand-blocks:hover .brand-title {
   color: #5C8EE6;
@@ -405,8 +420,85 @@ body {
   line-height: 160%;
   color: #828A99;
   margin: 0;
+  grid-area: text;
 }
-
+.founder {
+  position: relative;
+  padding-top: 4.5rem;
+  min-height: 41.25rem;
+}
+.founder-photo {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 45%;
+  height: 100%;
+  object-fit: cover;
+}
+.founder-content-wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+.founder-content {
+  max-width: 44rem;
+}
+.founder-text {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 160%;
+  color: #828A99;
+  margin: 0;
+  margin-bottom: 1.875rem;
+}
+.clients-wrapper {
+  display: flex;
+  gap: 3.12;
+}
+.clients-content {
+  flex-basis: 50%;
+}
+.clients-list {
+  list-style: none;
+  columns: 2 auto;
+  padding: 0;
+}
+.clients-list-item {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  font-weight: 400;
+  font-size: 1rem;
+  }
+  .clients-logo-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 10;
+  }
+  .clients-logo-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 33%;
+    border: 1px solid #EBEBF0;
+    padding: 1rem;
+    transition: border 0.2s;
+  }
+  .clients-logo-item:hover {
+    border: 2px solid #5C8EE6;
+  }
+  .clients-logo {
+    max-width: 100%;
+    width: 4.375rem;
+    height: 4.375rem;
+  }
+  .clients-logo {
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+  }
+  .clients-logo-item:hover .clients-logo {
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+  }
 @media ( max-width: 1700px) {
   html {
     font-size: 14px;
@@ -441,6 +533,18 @@ body {
     width: 1.25rem;
     height: 1.25rem;
   }
+  .founder {
+    padding-top: 2.5rem;
+  }
+  .founder-content {
+    max-width: 40rem;
+  }
+   .founder-title {
+    margin-bottom: 1.5625rem;
+  }
+  .founder-text {
+    margin-bottom: 1.25rem;
+  }
 }
 @media ( max-width: 1200px) {
   html {
@@ -471,6 +575,16 @@ body {
   .card {
     flex-basis: 50%;
   }
+  .brand-blocks {
+    grid-template-columns: auto auto;
+  }
+  .founder-content {
+    max-width: 35rem;
+  }
+  .clients-content {
+    flex-basis: 60%;
+  }
+
 }
 @media (max-width: 1024px) {
   .steps-buttons {
@@ -632,11 +746,17 @@ body {
   .steps {
     gap: 0.4rem;
   }
-  .brand-blocks {
-    flex-basis: 100%;
+  .blocks {
+    flex-direction: column;
   }
-  .agtech-brand, .logo-brand {
-    flex-shrink: 0.5;
+  .founder-content {
+    max-width: 30rem;
+  }
+  .founder-text {
+    font-size: 0.9rem;
+  }
+  .clients-wrapper {
+    flex-direction: column;
   }
 }
 @media (max-width: 768px) {
@@ -653,8 +773,22 @@ body {
   .card {
     flex-basis: 100%;
   }
-  .agtech-brand, .logo-brand {
-    flex-shrink: 0.8;
+  .founder {
+    padding: 0;
+  }
+  .founder-photo {
+    position: relative;
+    width: 100%;
+    margin-bottom: 3.125rem;
+  }
+  .founder-content-wrapper {
+    justify-content: center;
+  }
+  .founder-content {
+    max-width: 40rem;
+  }
+  .founder-text {
+    font-size: 1rem;
   }
 }
 @media (max-width: 576px) {
@@ -693,6 +827,15 @@ body {
   .steps {
     gap: .25rem;
   }
+  .brand-blocks {
+    grid-template-areas: "logo title" "text text";
+  }
+  .clients-list {
+    columns: 1;
+  }
+  .clients-logo-item {
+    flex-basis: 50%;
+  }
 }
 @media (max-width: 425px) {
   .header-button {
@@ -704,6 +847,9 @@ body {
   }
   .seporator {
     width: 100px;
+  }
+  .section-light {
+    margin-top: 9.375rem;
   }
   .section-title {
     margin-bottom: 2rem;
@@ -719,7 +865,7 @@ body {
     font-size: 1.3rem;
     margin-bottom: 2rem;
   }
-  .steps-link {
+  .button-link {
     font-size: 1.2rem;
   }
   .steps {
@@ -736,20 +882,45 @@ body {
   }
   .production {
     margin-top: 10rem;
+    margin-left: 0;
   }
   .production-title {
-    margin-bottom: 2.5rem;
+    margin-bottom: 3rem;
   }
   .card-content {
-    padding: 2.5rem;
+    padding: 2rem 2.4rem;
   }
   .card-title {
     font-size: 1.8rem;
   }
   .card-text {
     font-size: 1.2rem;
+    margin-bottom: 25.5rem;
+  }
+  .brand {
+    margin-top: 9rem;
+    margin-left: 0;
+  }
+  .section-title-brand {
+    margin-bottom: 3rem;
+  }
+  .brand-blocks {
+    padding: 2.2rem;
+  }
+  .brand-text {
+    font-size: 1.2rem;
   }
   .span-brand {
     display: none;
+  }
+  .founder {
+    margin-top: 6rem;
+  }
+  .founder-photo {
+    min-height:18.4375rem;
+    margin-bottom: 4.7rem;
+  }
+  .founder-text {
+    font-size: 1.240rem;
   }
 }
