@@ -425,13 +425,14 @@ body {
 .founder {
   position: relative;
   padding-top: 4.5rem;
+  min-height: 41.25rem;
 }
 .founder-photo {
   position: absolute;
   left: 0;
   top: 0;
   width: 45%;
-  min-height: 41.25rem;
+  height: 100%;
   object-fit: cover;
 }
 .founder-content-wrapper {
@@ -441,9 +442,6 @@ body {
 .founder-content {
   max-width: 44rem;
 }
-/* .founder-title {
-  margin-top: 3rem;
-} */
 .founder-text {
   font-weight: 400;
   font-size: 1rem;
@@ -452,6 +450,55 @@ body {
   margin: 0;
   margin-bottom: 1.875rem;
 }
+.clients-wrapper {
+  display: flex;
+  gap: 3.12;
+}
+.clients-content {
+  flex-basis: 50%;
+}
+.clients-list {
+  list-style: none;
+  columns: 2 auto;
+  padding: 0;
+}
+.clients-list-item {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  font-weight: 400;
+  font-size: 1rem;
+  }
+  .clients-logo-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 10;
+  }
+  .clients-logo-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 33%;
+    border: 1px solid #EBEBF0;
+    padding: 1rem;
+    transition: border 0.2s;
+  }
+  .clients-logo-item:hover {
+    border: 2px solid #5C8EE6;
+  }
+  .clients-logo {
+    max-width: 100%;
+    width: 4.375rem;
+    height: 4.375rem;
+  }
+  .clients-logo {
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+  }
+  .clients-logo-item:hover .clients-logo {
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+  }
 @media ( max-width: 1700px) {
   html {
     font-size: 14px;
@@ -534,6 +581,10 @@ body {
   .founder-content {
     max-width: 35rem;
   }
+  .clients-content {
+    flex-basis: 60%;
+  }
+
 }
 @media (max-width: 1024px) {
   .steps-buttons {
@@ -704,6 +755,9 @@ body {
   .founder-text {
     font-size: 0.9rem;
   }
+  .clients-wrapper {
+    flex-direction: column;
+  }
 }
 @media (max-width: 768px) {
   .container {
@@ -775,6 +829,12 @@ body {
   }
   .brand-blocks {
     grid-template-areas: "logo title" "text text";
+  }
+  .clients-list {
+    columns: 1;
+  }
+  .clients-logo-item {
+    flex-basis: 50%;
   }
 }
 @media (max-width: 425px) {
