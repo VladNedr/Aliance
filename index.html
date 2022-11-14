@@ -229,14 +229,13 @@
              </li>
           </ol>
           <!-- If we need navigation buttons -->
-          <div class="steps-buttons ">
+          <div class="steps-buttons  ">
             <div class="slider-button-prev ">
               <svg class="arrow-prev" width="36px" height="24px">
                 <use href="img/sprite.svg#arrow-prev"></use>
               </svg>
             </div>
             <div class="slider-button-next">
-            
                 <svg class="arrow-next" width="36px" height="24px">
                 <use href="img/sprite.svg#arrow-next"></use>
               </svg>
@@ -344,7 +343,7 @@
         <div class="seporator"></div>
         <div class="clients-wrapper">
           <div class="clients-content">
-            <h2 class="section-title">Производим аэрозольную продукцию для разных сфер</h2>
+            <h2 class="section-title clients-title">Производим аэрозольную продукцию для разных сфер</h2>
             <ul class="clients-list">
               <li class="clients-list-item">
                 <svg class="clients-list-logo" width="30px" height="30px">
@@ -427,9 +426,43 @@
       <div class="container">
         <div class="seporator"></div>
         <h2 class="section-title blog-title">Блог экспертов в области производства</h2>
-        
+        <!-- Slider main container -->
+        <div class="swiper blog-slider">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <a href="#" class="swiper-slide blog-card">
+              <img src="img/blog/laboratory.png" alt="lab" class="blog-card-image">
+              <h3 class="blog-card-title">Современная методология разработки одухотворила всех причастных</h3>
+              <p class="blog-card-text">Действия представителей оппозиции, превозмогая сложившуюся непростую экономическую ситуацию, в равной степени предоставлены...</p>
+            </a>
+            <a href="#" class="swiper-slide blog-card">
+              <img src="img/blog/piping.png" alt="piping" class="blog-card-image">
+              <h3 class="blog-card-title">Сложно сказать, почему жизнь прекрасна</h3>
+              <p class="blog-card-text">Сложно сказать, почему элементы политического процесса функционально разнесены на независимые элементы. Безусловно, высокотехнологичная...</p>
+            </a>
+          </div>
+          <!-- If we need navigation buttons -->
+          <div class="blog-slider-footer">
+            <div class="button-link">Весь блог</div>
+            <div class="blog-buttons">
+            <div class="blog-button-prev ">
+              <svg class="arrow-prev" width="36px" height="24px">
+                <use href="img/sprite.svg#arrow-prev"></use>
+              </svg>
+            </div>
+            <div class="blog-button-next ">
+               <svg class="arrow-next" width="36px" height="24px">
+                <use href="img/sprite.svg#arrow-next"></use>
+              </svg>
+            </div>
+            </div>
+          </div>
+        </div>
       </div>
+      <!--/ container  -->
     </section> 
+    <!--/ section-blog -->
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
   </body>
