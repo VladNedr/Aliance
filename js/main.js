@@ -4,16 +4,17 @@ const logo = document.querySelector(".logo");
 const mMenuToggle = document.querySelector(".mobile-menu-toggle");
 const menu = document.querySelector(".mobile-menu");
 //  Последние два пункта кода: При клике на mobile-menu(hamburger) появляется окно.
+const isFront = document.body.classList.contains("front-page");
 
 const lightModeOn = (event) => {
   navbar.classList.add("navbar-light");
-  logo.style.display = "block";
-  logoLight.style.display = "none";
 };
 const lightModeOff = (event) => {
   navbar.classList.remove("navbar-light");
-  logo.style.display = "none";
-  logoLight.style.display = "block";
+};
+
+const changeNavHeight = (height) => {
+  navbar.style.height = height;
 };
 
 const openMenu = (event) => {
@@ -39,7 +40,10 @@ window.addEventListener("scroll", () => {
   //   navbar.classList.remove("navbar-light");
   //   logo.href.baseVal = "img/sprite.svg#logo-white";
   // }
-  this.scrollY > 1 ? lightModeOn() : lightModeOff(); // Если окно прокручивается больше чем на 1px,сделай 1 условие,иначе выключи. Сокращенная запись,Того кода,что выше!
+  this.scrollY > 1 ? changeNavHeight("4.5rem") : changeNavHeight("5.875rem"); // Если окно прокручивается больше чем на 1px,сделай 1 условие,иначе выключи. Сокращенная запись,Того кода,что выше!
+  if (isFront) {
+    this.scrollY > 1 ? lightModeOn() : lightModeOff();
+  }
 });
 // fixed шапка сайта , меняет свой цвет по мере scroll по странице
 
