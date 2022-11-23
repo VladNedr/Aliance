@@ -1002,6 +1002,39 @@ body {
   right: 0;
   object-fit: cover;
 }
+/* AvtoHim */
+.header-blog {
+  position: relative;
+}
+.header-production-images {
+  position:relative;
+}
+.header-content-images {
+  position: absolute;
+  bottom: 0;
+  right: 12.5rem;
+}
+.header-blog-background {
+  background: url(../img/blog_bg.jpg) center center/cover no-repeat;
+  z-index: -2;
+}
+.header-blog-background::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background: rgba(41, 45, 51, 0.6);
+  width: 100%;
+  height: 100%;
+}
+.header-blog-title-white {
+  color: #FFFFFF;
+}
+.breadcrumbs-link-white {
+  color: #FFFFFF;
+}
+
 @media ( max-width: 1700px) {
   html {
     font-size: 14px;
