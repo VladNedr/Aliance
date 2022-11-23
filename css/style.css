@@ -900,6 +900,108 @@ body {
   padding: 1.25rem 3.125rem;
   margin-bottom: 1.5rem;
 }
+
+/* ABOUT О компании  */
+.header-blog {
+  padding-top: 6.125rem;
+}
+.header-about-content {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background: #F0F2F5;
+}
+.header-blog-title {
+  font-family: 'Bebas Neue Book';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 5rem;
+  line-height: 120%;
+  color: #292D33;
+  margin-top: 1.875rem;
+  margin-bottom: 1.875rem;
+}
+.breadcrumbs {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.breadcrumbs-list {
+  display: inline-block;
+}
+.breadcrumbs-list::before {
+  content: "—";
+  margin-left: .625rem;
+  margin-right: .625rem;
+  font-weight: 400;
+  font-size: .875rem;
+  color: #828A99;
+}
+.breadcrumbs-list:first-child:before {
+  content: "";
+}
+.breadcrumbs-link, .breadcrumbs-link-dark {
+  font-weight: 400;
+  font-size: .875rem;
+  line-height: 160%;
+  color: #828A99;
+  text-decoration: none;
+}
+.breadcrumbs-link-dark {
+  color: #292D33;
+  text-decoration: none;
+}
+.subheader-content {
+  display: flex;
+  margin-top: 6.25rem;
+  gap: 7.5rem;
+}
+.subheader-image {
+  width: 30rem;
+  height: 30rem;
+}
+.subheader-about-text {
+  color: #000;
+}
+.subheader-about-item {
+  border: 1px solid rgba(235, 235, 240, 100%);
+}
+.about-production-text {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 160%;
+  color: #828A99;
+  margin-bottom: 1.875rem;
+}
+.blog-about-wrapper {
+  display: flex;
+  gap: 6.25rem;
+}
+.blog-about-text {
+  max-width: 39.6875rem;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 160%;
+  color: #828A99;
+  margin-bottom: 3.125rem;
+}
+.blog-slider-footer-about {
+  justify-content: flex-end;
+}
+.about-wrapper {
+  position: relative;
+}
+.about-clients-content {
+  padding-top: 4rem;
+  max-width: 45rem;
+}
+.about-production-image {
+  width: 37.5rem;
+  height: 46.875rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  object-fit: cover;
+}
 @media ( max-width: 1700px) {
   html {
     font-size: 14px;
@@ -961,6 +1063,9 @@ body {
   .cta-image {
     left: -50px;
   }
+  .about-clients-content {
+    max-width: 40rem;;
+  }
 }
 @media ( max-width: 1200px) {
   html {
@@ -1016,6 +1121,13 @@ body {
   }
   .footer-phone {
     font-size: 1.5rem; 
+  }
+  .about-production-image {
+    width: 45%;
+    object-fit: contain;
+  }
+  .about-clients-content {
+    max-width: 35rem;
   }
 }
 @media (max-width: 1024px) {
@@ -1222,7 +1334,14 @@ body {
   .footer-menu-column-2 {
     columns: 2 auto;
     min-width: 35rem;
-}
+  }
+  .subheader-image {
+    width: 21.5625rem;
+    height: 21.5625rem;
+  }
+  .about-clients-content {
+    max-width: 30rem;
+  }
 }
 @media (max-width: 768px) {
   .container {
@@ -1290,7 +1409,28 @@ body {
   .footer-author {
     text-align: end;
   }
-
+  .subheader-content {
+    flex-direction: column;
+    gap: 4rem;
+  }
+  .subheader-image {
+    display: block;
+    margin: 0 auto;
+  }
+  .about-features {
+    margin-top: 3.125rem;
+  }
+  .about-production-image {
+    position: inherit;
+    width: 100%;
+    object-fit: fill;
+  }
+  .about-clients-content {
+    max-width: 45rem;
+  }
+  .blog-about-text:last-child {
+    display: none;
+  }
 }
 @media (max-width: 576px) {
   .container {
