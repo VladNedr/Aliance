@@ -665,7 +665,7 @@ body {
   transition: top 0.2s, left 0.2s, font-size 0.2s;
   background-color: inherit;
 }
-.input::focus {
+.input:focus {
   border: 2px solid #5C8EE6;
   outline: 0;
 }
@@ -677,6 +677,20 @@ body {
   font-size: 0.625rem;
   padding: 0 0.625rem;
   background-color: inherit;
+}
+.input.is-invalid {
+  border: 1px solid red;
+}
+.just-validate-error-label {
+  position: absolute;
+  font-size: 0.8rem;
+  display: inline-block;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  top: 0;
+  right: .625rem;
+  background-color: inherit;
+  transform: translateY(-50%);
 }
 .cta-form-footer {
   margin-top: 1.6rem;

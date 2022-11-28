@@ -133,3 +133,46 @@ document.addEventListener("keyup", (event) => {
   }
   // Закрытие модального окна с помощью кнопки Escape 
 });
+
+const forms = document.querySelectorAll("form"); // собираем формы
+forms.forEach((form) => {
+  const validation = new JustValidate(form, {
+    errorFieldCssClass: "is-invalid",
+  });
+  validation
+    .addField("[name=username]", [
+      {
+        rule: "required",
+        errorMessage: "Укажите Имя",
+      },
+      {
+        rule: "maxLength",
+        value: 30,
+        errorMessage: "Максимально 30 символов",
+      },
+    ])
+    .addField("[name=userphone]", [
+      {
+        rule: "required",
+        errorMessage: "Укажите телефон",
+      },
+    ])
+    .onSuccess((event) => {
+      const thisForm = event.target; // Наша форма
+      const formData = new FormData(thisForm); // данные из нашей формы
+      const ajaxSend = (formData) => {
+        fetch(thisForm.getAttribute("action"), {
+          method: thisForm.getAttribute("method"),
+          body: formData,
+        }).then((response) => {
+          if (response.ok) {
+            thisForm.reset();
+            alert("Форма отправлена!");
+          } else {
+            alert( "Ошибка. Текста ошибкиЖ " .response.statusText);
+          }
+        });
+      };
+      ajaxSend(formData);
+    });
+});
