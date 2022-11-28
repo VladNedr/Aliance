@@ -11,7 +11,7 @@
                 <label class="input-group-label" for="user-name">Имя</label>
               </div>
               <div class="input-group">
-                <input id="user-phone" type="tel" class="input" name="userphone" placeholder=" " maxlenght="15"  required >
+                <input id="user-phone" type="tel" class="input phone-mask" name="userphone" placeholder=" " maxlenght="15"  required >
                 <label class="input-group-label" for="user-phone">Номер телефона</label>
               </div>
             </div>
@@ -151,7 +151,7 @@
                 <label class="input-group-label modal-input-label" for="modal-user-name">Имя</label>
               </div>
               <div class="input-group modal-input-group">
-                <input id="modal-user-phone" type="tel" class="input modal-input"  placeholder=" " name="userphone" required  >
+                <input id="modal-user-phone" type="tel" class="input modal-input phone-mask"  placeholder=" " name="userphone" required  >
                 <label class="input-group-label modal-input-label" for="modal-user-phone">Номер телефона</label>
               </div>
           </div>
