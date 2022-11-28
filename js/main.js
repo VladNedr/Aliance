@@ -167,6 +167,7 @@ forms.forEach((form) => {
         }).then((response) => {
           if (response.ok) {
             thisForm.reset();
+            // поменять на свою форму
             alert("Форма отправлена!");
           } else {
             alert("Ошибка. Текста ошибки: ".response.statusText);

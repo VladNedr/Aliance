@@ -105,13 +105,13 @@
           <div class="footer-menu-wrapper">
             <ul class="footer-menu-list">
               <li class="footer-menu-item">
-                <a href="" class="footer-menu-link footer-link-bold">О компании</a>
+                <a href="/about.php" class="footer-menu-link footer-link-bold">О компании</a>
               </li>
               <li class="footer-menu-item">
-                <a href="" class="footer-menu-link footer-link-bold">Новости</a>
+                <a href="#" class="footer-menu-link footer-link-bold">Новости</a>
               </li>
               <li class="footer-menu-item">
-                <a href="" class="footer-menu-link footer-link-bold">Контакты</a>
+                <a href="#" class="footer-menu-link footer-link-bold">Контакты</a>
               </li>
             </ul>
           </div>

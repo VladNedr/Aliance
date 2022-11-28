@@ -137,7 +137,7 @@
           <h1 class="header-blog-title">о компании</h1>
           <ul class="breadcrumbs">
             <li class="breadcrumbs-list"><a href="/index.php" class="breadcrumbs-link">Главная</a></li>
-            <li class="breadcrumbs-list"><a href="" class="breadcrumbs-link-dark">О Компании</a></li>
+            <li class="breadcrumbs-list"><a href="#" class="breadcrumbs-link-dark">О Компании</a></li>
           </ul>
         </div>
       </div>

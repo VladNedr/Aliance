@@ -1199,9 +1199,6 @@ body {
   .navbar {
     height: 6.2rem;
   }
-  .navbar-light {
-    height: 5.2rem;
-  }
   .navbar-nav {
     display: none;
   }
@@ -1214,9 +1211,6 @@ body {
     width: 11rem;
     height: 3.5rem;
   }
-  .navbar-light .mobile-menu-toggle {
-    padding: 2rem 2.5rem;
-  }
   .mobile-menu-toggle {
     width: 80px;
     height: 100%;
@@ -1225,6 +1219,8 @@ body {
     flex-direction: column;
     padding: 2.5rem ;
     border-right:  1px solid rgba(235, 235, 240, 0.2);
+    min-height: 65px;
+    min-width: 75px;
   }
   .navbar-light .mobile-menu-line {
     background-color: #333;
@@ -1332,10 +1328,10 @@ body {
     display: none;
   }
   .close-menu .mobile-menu-line:nth-child(1) {
-    transform: rotate(45deg) translateY(8px);
+    transform: rotate(45deg) translateY(6px);
   }
   .close-menu .mobile-menu-line:nth-child(3) {
-    transform: rotate(-45deg) translateY(-9px);
+    transform: rotate(-45deg) translateY(-7px);
   }
   .steps {
     gap: 0.4rem;
