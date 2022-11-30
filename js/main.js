@@ -146,15 +146,25 @@ forms.forEach((form) => {
         errorMessage: "Укажите Имя",
       },
       {
+        rule: "minLength",
+        value: 2,
+        errorMessage: "Минимально 2 символа"
+      },
+      {
         rule: "maxLength",
-        value: 30,
-        errorMessage: "Максимально 30 символов",
+        value: 15,
+        errorMessage: "Максимально 15 символов",
       },
     ])
     .addField("[name=userphone]", [
       {
         rule: "required",
         errorMessage: "Укажите телефон",
+      },
+      {
+        rule: "minLength",
+        value: 8,
+        errorMessage: "Минимально 8 цифр"
       },
     ])
     .onSuccess((event) => {
