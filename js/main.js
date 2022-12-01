@@ -213,6 +213,11 @@ forms.forEach((form) => {
     });
 });
 
+let modalThanksButton = document.querySelector('.modal-thanks-button');
+modalThanksButton.addEventListener("click", (event) => {
+  window.location.reload();
+});
+
 /* Создаем префикс +7, даже если вводят 8 или 9 */
 const prefixNumber = (str) => {
   /* если вводят семерку, добавляем ей скобку */
