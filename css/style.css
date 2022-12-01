@@ -914,6 +914,14 @@ body {
   padding: 1.25rem 3.125rem;
   margin-bottom: 1.5rem;
 }
+.thanks {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 30px;
+}
+.modal-thanks-button {
+  margin-bottom: 0;
+}
 
 /* ABOUT О компании  */
 .header-blog {

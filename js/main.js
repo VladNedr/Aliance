@@ -113,23 +113,37 @@ const swiperBlog = new Swiper(".blog-slider", {
 // });
 //  1 способ открытия и закрытие модального окна
 
-const modal = document.querySelector(".modal");
-const modalDialog = document.querySelector(".modal-dialog");
+let currentModal; // Текущее модальное окно
+let modalDialog; // Белое диалоговое окно
+let alertModal = document.querySelector("#alert-modal"); // Окно с предупреждением
 
-document.addEventListener("click", (event) => {
-  if (
-    event.target.dataset.toggle == "modal" ||
-    event.target.parentNode.dataset.toggle == "modal" ||
-    (!event.composedPath().includes(modalDialog) &&
-      modal.classList.contains("is-open"))
-  ) {
+const modalButtons = document.querySelectorAll("[data-toggle=modal]"); // Переключатели модальных окон
+modalButtons.forEach((button) => {
+  // Клик по переключателю
+  button.addEventListener("click", (event) => {
     event.preventDefault();
-    modal.classList.toggle("is-open");
-  }
+    /* Определяем текущее открытое окно */
+    currentModal = document.querySelector(button.dataset.target);
+    // открываем текущее окно
+    currentModal.classList.toggle("is-open");
+    // назначаем диалоговое окно
+    modalDialog = currentModal.querySelector(".modal-dialog");
+    // отслеживаем клик по окну и пустым областям
+    currentModal.addEventListener("click", (event) => {
+      // елси клик в пустую белую область (не диалог)
+      if (!event.composedPath().includes(modalDialog)) {
+        // закрываем окно
+        currentModal.classList.remove("is-open");
+      }
+    });
+  });
 });
+// ловим событие нажатия на кнопки
 document.addEventListener("keyup", (event) => {
-  if (event.key == "Escape" && modal.classList.contains("is-open")) {
-    modal.classList.toggle("is-open");
+  //  проверяем что это ECAPE и текущее окно открыто
+  if (event.key == "Escape" && currentModal.classList.contains("is-open")) {
+    // закрываем текущее окно
+    currentModal.classList.toggle("is-open");
   }
   // Закрытие модального окна с помощью кнопки Escape
 });
@@ -148,7 +162,7 @@ forms.forEach((form) => {
       {
         rule: "minLength",
         value: 2,
-        errorMessage: "Минимально 2 символа"
+        errorMessage: "Минимально 2 символа",
       },
       {
         rule: "maxLength",
@@ -164,7 +178,7 @@ forms.forEach((form) => {
       {
         rule: "minLength",
         value: 8,
-        errorMessage: "Минимально 8 цифр"
+        errorMessage: "Минимально 8 цифр",
       },
     ])
     .onSuccess((event) => {
@@ -178,7 +192,18 @@ forms.forEach((form) => {
           if (response.ok) {
             thisForm.reset();
             // поменять на свою форму
-            alert("Форма отправлена!");
+            currentModal.classList.remove("is-open");
+            alertModal.classList.add("is-open");
+            currentModal = alertModal;
+            modalDialog = currentModal.querySelector(".modal-dialog");
+            // отслеживаем клик по окну и пустым областям
+            currentModal.addEventListener("click", (event) => {
+              // елси клик в пустую белую область (не диалог)
+              if (!event.composedPath().includes(modalDialog)) {
+                // закрываем окно
+                currentModal.classList.remove("is-open");
+              }
+            });
           } else {
             alert("Ошибка. Текста ошибки: ".response.statusText);
           }

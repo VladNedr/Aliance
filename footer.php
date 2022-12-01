@@ -16,7 +16,7 @@
               </div>
             </div>
             <div class="cta-form-footer">
-              <button type="submit" class="button cta-button">Отправить заявку</button>
+              <button type="submit" class="button cta-button" >Отправить заявку</button>
               <div class="notify">
                 <svg class="notify-icon" width="16px" height="16px">
                   <use href="img/sprite.svg#notify"></use>
@@ -135,10 +135,10 @@
       </div>
     </footer>
     <!-- / footer  -->
-    <div class="modal">
+    <div class="modal" id="feedback-modal" >
       <div class="modal-dialog">
         <h2 class="modal-title">Есть вопросы?</h2>
-        <a href="#" class="modal-close" data-toggle="modal">
+        <a href="#" class="modal-close" data-toggle="modal" data-target="#feedback-modal">
           <svg class="map-icon" width="24px" height="24px">
             <use href="img/sprite.svg#close"></use>
           </svg>
@@ -165,6 +165,21 @@
             </div>
           </div>
         </form>
+      </div>
+    </div>
+    <div class="modal" id="alert-modal" >
+      <div class="modal-dialog">
+        <svg class="thanks" width="360px" height="310px">
+          <use href="img/sprite.svg#thanks"></use>
+        </svg>
+        <h2 class="modal-title">Спасибо за заявку!</h2>
+        <a href="#" class="modal-close" data-toggle="modal" data-target="#alert-modal">
+          <svg class="map-icon" width="24px" height="24px">
+            <use href="img/sprite.svg#close"></use>
+          </svg>
+        </a>
+        <p class="modal-text">Наш менеджер свяжется с Вами в ближайшее время ответит на все интересующие вопросы и поможем даже в самых сложных случаях!</p>
+        <button type="submit" class="button modal-form-button modal-thanks-button">Вернуться на главную</button>
       </div>
     </div>
     <script src="js/swiper-bundle.min.js"></script>
