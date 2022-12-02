@@ -72,7 +72,7 @@
             <div class="footer-menu-title">Контрактное производство</div>
             <ul class="footer-menu-list footer-menu-column-2">
               <li class="footer-menu-item">
-                <a href="#" class="footer-menu-link">Автомобильная химия</a>
+                <a href="./avtohim.php" class="footer-menu-link">Автомобильная химия</a>
               </li>
               <li class="footer-menu-item">
                 <a href="#" class="footer-menu-link">Бытовая химия</a>
@@ -95,10 +95,10 @@
             <div class="footer-menu-title">Собственные марки</div>
             <ul class="footer-menu-list">
               <li class="footer-menu-item">
-                <a href="" class="footer-menu-link">Автохимия AG-Tech</a>
+                <a href="./agtech-avtohim.php" class="footer-menu-link">Автохимия AG-Tech</a>
               </li>
               <li class="footer-menu-item">
-                <a href="" class="footer-menu-link">Автохимия AP</a>
+                <a href="./agtech-avtohim.php" class="footer-menu-link">Автохимия AP</a>
               </li>
             </ul>
           </div>
@@ -111,7 +111,7 @@
                 <a href="#" class="footer-menu-link footer-link-bold">Новости</a>
               </li>
               <li class="footer-menu-item">
-                <a href="#" class="footer-menu-link footer-link-bold">Контакты</a>
+                <a href="./contacts.php" class="footer-menu-link footer-link-bold">Контакты</a>
               </li>
             </ul>
           </div>
@@ -123,7 +123,7 @@
         <div class="footer-finish">
           <div class="footer-legal">
             <p class="footer-copyright">&copy; <?php echo date("d.m.Y")?> «Aliance Production». Все права защищены.</p>
-            <a href="" class="footer-policy">Политики конфиденциальности</a>
+            <a href="./politics.php" class="footer-policy">Политики конфиденциальности</a>
           </div>
           <div class="footer-author">
             <span class="made-in">Сделано в</span>

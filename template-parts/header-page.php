@@ -11,19 +11,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css" />
-    <title>Автомобильная химия- Aliance Production</title>
+    <title> <?= $page_title ?> - Aliance Production</title>
   </head>
   <body>
-        <div class="mobile-menu">
+    <div class="mobile-menu">
       <ul class="mobile-menu-nav">
         <li class="mobile-menu-nav-item">
-          <a href="#" class="mobile-menu-link">О компании</a>
+          <a href="/about.php" class="mobile-menu-link">О компании</a>
         </li>
         <li class="mobile-menu-nav-item">
-          <a href="#" class="mobile-menu-link">Контрактное производство</a>
+          <a href="/contracts.php" class="mobile-menu-link">Контрактное производство</a>
           <ul class="mobile-submenu">
             <li class="mobile-submenu-item">
-              <a href="#" class="mobile-submenu-link">Автомобильная химия</a>
+              <a href="./avtohim.php" class="mobile-submenu-link">Автомобильная химия</a>
             </li>
             <li class="mobile-submenu-item">
               <a href="#" class="mobile-submenu-link">Бытовая химия</a>
@@ -43,10 +43,10 @@
           </ul>
         </li>
         <li class="mobile-menu-nav-item">
-          <a href="#" class="mobile-menu-link">Собственные марки</a>
+          <a href="./trademarks.php" class="mobile-menu-link">Собственные марки</a>
           <ul class="mobile-submenu">
               <li class="mobile-submenu-item">
-              <a href="#" class="mobile-submenu-link">Автохимия AG-Tech</a>
+              <a href="./agtech-avtohim.php" class="mobile-submenu-link">Автохимия AG-Tech</a>
             </li>
               <li class="mobile-submenu-item">
               <a href="#" class="mobile-submenu-link">Автохимия AP</a>
@@ -54,10 +54,10 @@
           </ul>
         </li>
         <li class="mobile-menu-nav-item">
-          <a href="#" class="mobile-menu-link">Новости</a>
+          <a href="./news.php" class="mobile-menu-link">Новости</a>
         </li>
         <li class="mobile-menu-nav-item">
-          <a href="#" class="mobile-menu-link">Контакты</a>
+          <a href="./contacts.php" class="mobile-menu-link">Контакты</a>
         </li>
       </ul>
       <a href="tel:74996861014" class="mobile-phone">+7 (499) 686-10-14</a>
@@ -102,19 +102,19 @@
         </a>
         <ul class="navbar-nav">
           <li class="navbar-nav-item">
-            <a href="#" class="navbar-nav-link">О компании</a>
+            <a href="./about.php" class="navbar-nav-link">О компании</a>
           </li>
           <li class="navbar-nav-item">
-            <a href="#" class="navbar-nav-link">Контрактное производство</a>
+            <a href="./contracts.php" class="navbar-nav-link">Контрактное производство</a>
           </li>
           <li class="navbar-nav-item">
-            <a href="#" class="navbar-nav-link">Собственные торговые марки</a>
+            <a href="./trademarks.php" class="navbar-nav-link">Собственные торговые марки</a>
           </li>
           <li class="navbar-nav-item">
             <a href="#" class="navbar-nav-link">Новости</a>
           </li>
           <li class="navbar-nav-item">
-            <a href="#" class="navbar-nav-link">Контакты</a>
+            <a href="./contacts.php" class="navbar-nav-link">Контакты</a>
           </li>
         </ul>
         <div class="navbar-phone">
@@ -123,39 +123,22 @@
           </svg>
           <a href="tel:+7496861014" class="navbar-phone-link">+7 (499) 686-10-14</a>
         </div>
-        <button class="button navbar-button" data-toggle="modal">
+        <button class="button navbar-button" data-toggle="modal" data-target="#feedback-modal">
             <svg class="button-icon" width="24px" height="24px">
             <use href="img/sprite.svg#phone"></use>
           </svg>
           <span class="button-text">Получить консультацию</span>
         </button>
     </nav>
-    <header class="header-blog">
-      <div class="header-about-content header-production-images">
-        <div class="container ">
-          <img src="img/avto-him.png" alt="Автомобильная химия" class="header-content-images">
+    <header class="header-blog header-about">
+      <div class=" header-about-content">
+        <div class="container">
           <div class="seporator"></div>
-          <h1 class="header-blog-title">Автохимия AG-Tech</h1>
+          <h1 class="header-blog-title"><?= $page_title ?></h1>
           <ul class="breadcrumbs">
-            <li class="breadcrumbs-list"><a href="/index.html" class="breadcrumbs-link">Главная</a></li>
-            <li class="breadcrumbs-list"><a href="" class="breadcrumbs-link-dark">О Компании</a></li>
+            <li class="breadcrumbs-list"><a href="/index.php" class="breadcrumbs-link">Главная</a></li>
+            <li class="breadcrumbs-list"><a href="#" class="breadcrumbs-link-dark"><?= $page_title ?></a></li>
           </ul>
         </div>
       </div>
     </header>
-
-
-    <header class="header-blog">
-      <div class="header-about-content header-production-images header-blog-background">
-        <div class="container ">
-          <div class="seporator"></div>
-          <h1 class="header-blog-title header-blog-title-white">Современная методология разработки одухотворила всех причастных</h1>
-          <ul class="breadcrumbs">
-            <li class="breadcrumbs-list"><a href="/index.html" class="breadcrumbs-link breadcrumbs-link-white ">Главная</a></li>
-            <li class="breadcrumbs-list"><a href="" class="breadcrumbs-link breadcrumbs-link-white  ">О Компании</a></li>
-          </ul>
-        </div>
-      </div>
-    </header>
-  </body>
-</html>

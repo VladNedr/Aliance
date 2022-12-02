@@ -1,15 +1,15 @@
 <?php
-$page_title = 'О компании';
-$header_style = 'header-about-content';
-include_once('./template-parts/header-page.php');?>
+$page_title = 'Автомобильная химия';
+include_once('./template-parts/header-images.php');?>
     <section class=" section subheader">
       <div class="container">
         <div class="subheader-content">
-          <img src="img/expertshim.png" alt="Blog" class="subheader-image">
+          <img src="img/labdoctor.png" alt="blog" class="subheader-image subheader-subimages">
           <div class="founder-content">
             <div class="seporator"></div>
-            <h2 class="section-title founder-title">мы - эксперты в области производства химии</h2>
-            <p class="founder-text">Разнообразный и богатый опыт говорит нам, что перспективное планирование однозначно фиксирует необходимость поставленных обществом задач! Есть над чем задуматься: ключевые особенности структуры проекта могут быть объединены в целые кластеры себе подобных. Интерактивные прототипы, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут описаны максимально подробно. Значимость этих проблем настолько очевидна, что перспективное планирование играет важную роль в формировании системы массового участия.
+            <h2 class="section-title founder-title">Контрактное производство автомобильной химии</h2>
+            <p class="founder-text">Прежде всего, начало повседневной работы по формированию позиции однозначно фиксирует необходимость приоритизации разума над эмоциями. Кстати, представители современных социальных резервов неоднозначны и будут описаны максимально подробно. <br> <br>
+            Но социально-экономическое развитие напрямую зависит от поставленных обществом задач! Безусловно, постоянный количественный рост и сфера нашей активности предоставляет широкие возможности для системы обучения кадров, соответствующей насущным потребностям. В целом, конечно, выбранный нами инновационный путь обеспечивает широкому кругу (специалистов) участие в формировании своевременного выполнения сверхзадачи. А ещё элементы политического процесса представлены в исключительно положительном свете. Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: высокотехнологичная концепция общественного уклада создаёт предпосылки для глубокомысленных рассуждений. В своём стремлении повысить качество жизни, они забывают, что дальнейшее развитие различных форм деятельности, а также свежий взгляд на привычные вещи - безусловно открывает новые горизонты для поставленных обществом задач.
             </p>
           </div>
         </div>
@@ -68,32 +68,31 @@ include_once('./template-parts/header-page.php');?>
       </div>
     </section>
     <section class="section about-production">
+      <img src="img/labwomandoctor.png" alt="woman" class="about-production-image avtohim-production-image">
       <div class="container">
       <div class="clients-wrapper about-wrapper">
             <div class="clients-content about-clients-content">
               <div class="seporator"></div>
-              <h2 class="section-title ">Наше производство</h2>
-              <img src="img/labwoman.jpg" alt="woman" class="about-production-image">
-              <p class="about-production-text">Предварительные выводы неутешительны: разбавленное изрядной долей эмпатии, рациональное мышление обеспечивает широкому кругу (специалистов) участие в формировании глубокомысленных рассуждений. Но граница обучения кадров создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с учётом комплекса кластеризации усилий.
-              Реализация намеченных плановых заданий, а также свежий взгляд на привычные вещи - безусловно открывает новые горизонты для соответствующих условий активизации. Предварительные выводы неутешительны: экономическая повестка сегодняшнего дня требует анализа анализа существующих паттернов поведения.</p>
+              <h2 class="section-title ">Изготовление автохимии</h2>
+              <p class="about-production-text">Но современная методология разработки позволяет оценить значение прогресса профессионального сообщества. Есть над чем задуматься: тщательные исследования конкурентов набирают популярность среди определенных слоев населения, а значит, должны быть ассоциативно распределены по отраслям. В своём стремлении повысить качество жизни, они забывают, что дальнейшее развитие различных форм деятельности, а также свежий взгляд на привычные вещи - безусловно открывает новые горизонты для поставленных обществом задач.</p>
               <ul class="clients-list">
                 <li class="clients-list-item">
                   <svg class="clients-list-logo" width="30px" height="30px">
                     <use href="img/sprite.svg#auto"></use>
                   </svg>
-                  Актуальные цены
+                  Автомобильная химия
                 </li>
                 <li class="clients-list-item">
                   <svg class="clients-list-logo" width="30px" height="30px">
                     <use href="img/sprite.svg#homes"></use>
                   </svg>
-                  Полное описание товаров
+                  Бытовая химия
                 </li>
                 <li class="clients-list-item">
                   <svg class="clients-list-logo" width="30px" height="30px">
                     <use href="img/sprite.svg#dis"></use>
                   </svg>
-                  Актуальные цены
+                  Дезинфицирующие средства
                 </li>
                 <li class="clients-list-item">
                   <svg class="clients-list-logo" width="30px" height="30px">
@@ -117,23 +116,6 @@ include_once('./template-parts/header-page.php');?>
             </div>
       </div>
     </section>
-    <!-- /.section our-production -->
-    <section class="section founder">
-      <img src="img/founder_bg.jpg" alt="founder" class="founder-photo">
-      <div class="container">
-        <div class="founder-content-wrapper">
-          <div class="founder-content">
-            <div class="seporator"></div>
-            <h2 class="section-title founder-title">Отношение к делу <br> и к клиентам</h2>
-            <p class="founder-text">Кстати, интерактивные прототипы описаны максимально подробно. Повседневная практика показывает, что укрепление и развитие внутренней структуры говорит о возможностях соответствующих условий активизации. Внезапно, независимые государства, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут подвергнуты целой серии независимых исследований. С учётом сложившейся международной обстановки, синтетическое тестирование выявляет срочную потребность системы массового участия. <br> <br>
-            А ещё действия представителей оппозиции, превозмогая сложившуюся непростую экономическую ситуацию, в равной степени предоставлены сами себе. Не следует, однако, забывать, что выбранный нами инновационный путь в значительной степени обусловливает важность дальнейших направлений развития.
-            </p>
-            <a href="#" class="button-link">Подробнее о компании</a>
-          </div>
-        </div> 
-      </div>
-    </section>
-    <!--/ section founder -->
     <section class="section blog">
       <div class="container">
         <div class="seporator"></div>
@@ -145,7 +127,7 @@ include_once('./template-parts/header-page.php');?>
         <!-- Slider main container -->
         <div class="swiper blog-slider">
           <!-- Additional required wrapper -->
-          <div class="swiper-wrapper">
+          <div class="swiper-wrapper fixed-height">
             <!-- Slides -->
             <a href="#" class="swiper-slide blog-card">
               <img src="img/blog/laboratory.png" alt="lab" class="blog-card-image">
@@ -172,8 +154,84 @@ include_once('./template-parts/header-page.php');?>
         </div>
       </div>
       <!--/ container  -->
-    </section> 
+    </section>
+    <section class="section prospects">
+      <div class="container">
+        <div class="seporator"></div>
+        <h2 class="section-title">Виды автохимии</h2>
+        <p class="prospects-text">Но современная методология разработки позволяет оценить значение прогресса профессионального сообщества. Есть над чем задуматься: тщательные исследования конкурентов набирают популярность среди определенных слоев населения, а значит, должны быть ассоциативно распределены по отраслям.</p>
+        <ul class="prospects-list">
+          <li class="prospects-item">Антискотч</li>
+          <li class="prospects-item">Многоцелевая смазка</li>
+          <li class="prospects-item">Жидкий ключ</li>
+          <li class="prospects-item">Высокотемпературная смазка</li>
+          <li class="prospects-item">Универсальный очиститель деталей</li>
+          <li class="prospects-item">Силиконовая смазка</li>
+          <li class="prospects-item">Цепная смазка</li>
+          <li class="prospects-item">Медная смазка</li>
+          <li class="prospects-item">Графитовая смазка</li>
+          <li class="prospects-item">Очиститель кондиционера пенный</li>
+          <li class="prospects-item">Очиститель тормозных дисков</li>
+          <li class="prospects-item">Очиститель битумных пятен</li>
+          <li class="prospects-item">Очиститель кондционера</li>
+          <li class="prospects-item">Очиститель дросельной заслонки</li>
+          <li class="prospects-item">Очиститель обивки </li>
+          <li class="prospects-item">Тефлоновая смазка</li>
+          <li class="prospects-item">Тефлоновая смазка</li>
+          <li class="prospects-item">Универсальный очиститель</li>
+          <li class="prospects-item">Чернитель шин </li>
+          <li class="prospects-item">Чернитель шин + очистка</li>
+        </ul>
+      </div>
+    </section>
     <!--/ section-blog -->
+    <section class="section section-light">
+      <div class="container">
+        <div class="seporator"></div>
+        <h2 class="section-title">Cхема работы</h2>
+        <div class="swiper ">
+          <!-- Additional required wrapper -->
+          <ol class="swiper-wrapper steps fixed-height">
+            <!-- Slides -->
+            <li class="swiper-slide steps-item">
+              <span class="steps-number">01</span>
+              <h3 class="steps-title">Знакомство</h3>
+              <p class="steps-text">Безусловно, сплочённость команды профессионалов позволяет оценить значение форм воздействия.</p>
+              <a href="#" class="button-link" data-toggle="modal">Оставить заявку</a>
+            </li>
+            <li class="swiper-slide steps-item">
+              <span class="steps-number">02</span>
+              <h3 class="steps-title">Заключение <br> договора</h3>
+              <p class="steps-text">Лишь интерактивные прототипы призваны к ответу.</p>
+            </li>
+            <li class="swiper-slide steps-item">
+              <span class="steps-number">03</span>
+              <h3 class="steps-title">Производство</h3>
+              <p class="steps-text">А также стремящиеся вытеснить традиционное производство, нанотехнологии функционально разнесены на независимые элементы.</p>
+            </li>
+              <li class="swiper-slide steps-item">
+              <span class="steps-number">04</span>
+              <h3 class="steps-title">Доставка</h3>
+              <p class="steps-text">В частности, экономическая повестка сегодняшнего дня говорит о возможностях приоритизации  разума над эмоциями.</p>
+              </li>
+          </ol>
+          <!-- If we need navigation buttons -->
+          <div class="steps-buttons  ">
+            <div class="slider-button-prev ">
+              <svg class="arrow-prev" width="36px" height="24px">
+                <use href="img/sprite.svg#arrow-prev"></use>
+              </svg>
+            </div>
+            <div class="slider-button-next">
+                <svg class="arrow-next" width="36px" height="24px">
+                <use href="img/sprite.svg#arrow-next"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+      <!-- /.section-steps -->
     <section class="section clients">
       <div class="container">
         <div class="seporator"></div>
@@ -258,5 +316,4 @@ include_once('./template-parts/header-page.php');?>
       </div>
     </section>
     <!-- /.section clients -->
-
-    <?php include_once('./template-parts/footer.php');?>
+<?php include_once('./template-parts/footer.php');?>

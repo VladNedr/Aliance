@@ -20,10 +20,10 @@
           <a href="/about.php" class="mobile-menu-link">О компании</a>
         </li>
         <li class="mobile-menu-nav-item">
-          <a href="#" class="mobile-menu-link">Контрактное производство</a>
+          <a href="contracts.php" class="mobile-menu-link">Контрактное производство</a>
           <ul class="mobile-submenu">
             <li class="mobile-submenu-item">
-              <a href="#" class="mobile-submenu-link">Автомобильная химия</a>
+              <a href="./avtohim.php" class="mobile-submenu-link">Автомобильная химия</a>
             </li>
             <li class="mobile-submenu-item">
               <a href="#" class="mobile-submenu-link">Бытовая химия</a>
@@ -43,10 +43,10 @@
           </ul>
         </li>
         <li class="mobile-menu-nav-item">
-          <a href="#" class="mobile-menu-link">Собственные марки</a>
+          <a href="./trademarks.php" class="mobile-menu-link">Собственные марки</a>
           <ul class="mobile-submenu">
               <li class="mobile-submenu-item">
-              <a href="#" class="mobile-submenu-link">Автохимия AG-Tech</a>
+              <a href="./agtech-avtohim.php" class="mobile-submenu-link">Автохимия AG-Tech</a>
             </li>
               <li class="mobile-submenu-item">
               <a href="#" class="mobile-submenu-link">Автохимия AP</a>
@@ -57,7 +57,7 @@
           <a href="#" class="mobile-menu-link">Новости</a>
         </li>
         <li class="mobile-menu-nav-item">
-          <a href="#" class="mobile-menu-link">Контакты</a>
+          <a href="./contacts.php" class="mobile-menu-link">Контакты</a>
         </li>
       </ul>
       <a href="tel:74996861014" class="mobile-phone">+7 (499) 686-10-14</a>
@@ -105,16 +105,16 @@
             <a href="/about.php" class="navbar-nav-link">О компании</a>
           </li>
           <li class="navbar-nav-item">
-            <a href="#" class="navbar-nav-link">Контрактное производство</a>
+            <a href="/contracts.php" class="navbar-nav-link">Контрактное производство</a>
           </li>
           <li class="navbar-nav-item">
-            <a href="#" class="navbar-nav-link">Собственные торговые марки</a>
+            <a href="./trademarks.php" class="navbar-nav-link">Собственные торговые марки</a>
           </li>
           <li class="navbar-nav-item">
             <a href="#" class="navbar-nav-link">Новости</a>
           </li>
           <li class="navbar-nav-item">
-            <a href="#" class="navbar-nav-link">Контакты</a>
+            <a href="./contacts.php" class="navbar-nav-link">Контакты</a>
           </li>
         </ul>
         <div class="navbar-phone">
@@ -210,7 +210,7 @@
               <span class="steps-number">01</span>
               <h3 class="steps-title">Знакомство</h3>
               <p class="steps-text">Безусловно, сплочённость команды профессионалов позволяет оценить значение форм воздействия.</p>
-              <a href="#" class="button-link" data-toggle="modal">Оставить заявку</a>
+              <a  class="button-link" data-toggle="modal" data-target="#feedback-modal">Оставить заявку</a>
             </li>
             <li class="swiper-slide steps-item">
               <span class="steps-number">02</span>
@@ -246,82 +246,12 @@
     </section>
       <!-- /.section-steps -->
 
-    <section class="section production">
-      <div class="container">
-        <div class="seporator"></div>
-        <h2 class="section-title production-title">Контрактное производство</h2>
-        <div class="cards">
-          <a href="#" class="card">
-            <div class="card-content">
-              <h3 class="card-title">Автомобильная химия</h3>
-              <p class="card-text">Безусловно, сплочённость команды профессионалов позволяет оценить значение форм воздействия.</p>
-            </div>
-            <img src="img/production/avtohim.png" alt="Автомобильная Химия" class="card-image">
-          </a>
-          <a href="#" class="card">
-            <div class="card-content">
-              <h3 class="card-title">Бытовая химия</h3>
-              <p class="card-text">А также стремящиеся вытеснить традиционное производство, нанотехнологии функционально разнесены на независимые элементы.</p>
-            </div>
-            <img src="img/production/homehim.png" alt=" Бытовая Химия" class="card-image">
-          </a>
-          <a href="#" class="card">
-            <div class="card-content">
-              <h3 class="card-title">Дезинфицирующие средства</h3>
-              <p class="card-text">Лишь интерактивные прототипы призваны к ответу.</p>
-            </div>
-            <img src="img/production/him.png" alt="Химия Дезинцекции" class="card-image">
-          </a>
-          <a href="#" class="card">
-            <div class="card-content">
-              <h3 class="card-title">Пищевые аэрозоли</h3>
-              <p class="card-text">Безусловно, сплочённость команды профессионалов позволяет оценить значение форм воздействия.</p>
-            </div>
-            <img src="img/production/him.png" alt="Пищевые аэрозоли" class="card-image">
-          </a>
-          <a href="#" class="card">
-            <div class="card-content">
-              <h3 class="card-title">Косметическая продукция</h3>
-              <p class="card-text">Лишь интерактивные прототипы призваны к ответу.</p>
-            </div>
-            <img src="img/production/avtohim.png" alt="Косметическая продукция" class="card-image">
-          </a>
-          <a href="#" class="card">
-            <div class="card-content">
-              <h3 class="card-title">Краски аэрозольные</h3>
-              <p class="card-text">А также стремящиеся вытеснить традиционное производство, нанотехнологии функционально разнесены на независимые элементы.</p>
-            </div>
-            <img src="img/production/homehim.png" alt="Краски Аэрозольные" class="card-image">
-          </a>
-        </div>
-        <!-- /.cards -->
-      </div>
-    </section>
-    <!-- /.section production -->
-    
-    <section class="section brand">
-      <div class="container">
-        <div class="seporator"></div>
-        <h2 class="section-title section-title-brand">Cобственные <span class="span-brand">торговые</span> марки</h2>
-        <div class="blocks">
-          <a href="#" class="brand-blocks">
-            <svg class="agtech-brand">
-              <use href="img/sprite.svg#agtech-brand"></use>
-            </svg>
-              <h3 class="brand-title">Автохимия AG-Tech</h3>
-              <p class="brand-text">Для современного мира разбавленное изрядной долей эмпатии, рациональное мышление создаёт предпосылки для поставленных обществом задач.</p>
-          </a>
-          <a href="#" class="brand-blocks">
-              <svg class="logo-brand" >
-              <use href="img/sprite.svg#logo-brand"></use>
-            </svg>
-              <h3 class="brand-title">Автохимия AP</h3>
-              <p class="brand-text">Для современного мира разбавленное изрядной долей эмпатии, рациональное мышление создаёт предпосылки для поставленных обществом задач.</p>
-          </a>
-        </div>
-      </div>
-    </section>
-    <!--/ section-brand -->
+    <?php $block_title = "Контрактное Производсвто";
+     include_once('./template-parts/production-block.php')?>
+
+    <?php $brand_title = "Собственные торговые марки";
+     include_once('./template-parts/brands-blocks.php')?>
+
     <section class="section founder">
       <img src="img/founder_bg.jpg" alt="founder" class="founder-photo">
       <div class="container">
@@ -332,7 +262,7 @@
             <p class="founder-text">Кстати, интерактивные прототипы описаны максимально подробно. Повседневная практика показывает, что укрепление и развитие внутренней структуры говорит о возможностях соответствующих условий активизации. Внезапно, независимые государства, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут подвергнуты целой серии независимых исследований. С учётом сложившейся международной обстановки, синтетическое тестирование выявляет срочную потребность системы массового участия. <br> <br>
             А ещё действия представителей оппозиции, превозмогая сложившуюся непростую экономическую ситуацию, в равной степени предоставлены сами себе. Не следует, однако, забывать, что выбранный нами инновационный путь в значительной степени обусловливает важность дальнейших направлений развития.
             </p>
-            <a href="#" class="button-link">Подробнее о компании</a>
+            <a href="./about.php" class="button-link">Подробнее о компании</a>
           </div>
         </div> 
       </div>
@@ -431,12 +361,12 @@
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
             <!-- Slides -->
-            <a href="#" class="swiper-slide blog-card">
+            <a href="./modern-methodology.php" class="swiper-slide blog-card">
               <img src="img/blog/laboratory.png" alt="lab" class="blog-card-image">
               <h3 class="blog-card-title">Современная методология разработки одухотворила всех причастных</h3>
               <p class="blog-card-text">Действия представителей оппозиции, превозмогая сложившуюся непростую экономическую ситуацию, в равной степени предоставлены...</p>
             </a>
-            <a href="#" class="swiper-slide blog-card">
+            <a href="./modern-methodology.php" class="swiper-slide blog-card">
               <img src="img/blog/piping.png" alt="piping" class="blog-card-image">
               <h3 class="blog-card-title">Сложно сказать, почему жизнь прекрасна</h3>
               <p class="blog-card-text">Сложно сказать, почему элементы политического процесса функционально разнесены на независимые элементы. Безусловно, высокотехнологичная...</p>
@@ -444,7 +374,7 @@
           </div>
           <!-- If we need navigation buttons -->
           <div class="blog-slider-footer">
-            <div class="button-link">Весь блог</div>
+            <a href="./blog.php" class="button-link">Весь блог</a>
             <div class="blog-buttons">
             <div class="blog-button-prev ">
               <svg class="arrow-prev" width="36px" height="24px">
@@ -464,4 +394,4 @@
     </section> 
     <!--/ section-blog -->
 
-    <?php include_once('footer.php');?>
+    <?php include_once('./template-parts/footer.php');?>
