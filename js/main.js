@@ -169,6 +169,11 @@ forms.forEach((form) => {
         value: 15,
         errorMessage: "Максимально 15 символов",
       },
+      {
+        rule: "customRegexp",
+        value: /^[A-Za-zА-Яа-яЁё\s]+$/,
+        errorMessage: "Неверный формат имени",
+      },
     ])
     .addField("[name=userphone]", [
       {
@@ -177,7 +182,7 @@ forms.forEach((form) => {
       },
       {
         rule: "minLength",
-        value: 8,
+        value: 11,
         errorMessage: "Минимально 8 цифр",
       },
     ])
