@@ -244,15 +244,15 @@ include_once('./template-parts/header-page.php');?>
             </ul>
           </div>
           <div class="clients-logo-list">
-            <a class="clients-logo-item"><img src="img/clients-logo-color.png" alt="clients logo" class="clients-logo"></a>
-            <a class="clients-logo-item"><img src="img/clients-logo-color.png" alt="clients logo" class="clients-logo"></a>
-            <a class="clients-logo-item"><img src="img/clients-logo-color.png" alt="clients logo" class="clients-logo"></a>
-            <a class="clients-logo-item"><img src="img/clients-logo-color.png" alt="clients logo" class="clients-logo"></a>
-            <a class="clients-logo-item"><img src="img/clients-logo-color.png" alt="clients logo" class="clients-logo"></a>
-            <a class="clients-logo-item"><img src="img/clients-logo-color.png" alt="clients logo" class="clients-logo"></a>
-            <a class="clients-logo-item"><img src="img/clients-logo-color.png" alt="clients logo" class="clients-logo"></a>
-            <a class="clients-logo-item"><img src="img/clients-logo-color.png" alt="clients logo" class="clients-logo"></a>
-            <a class="clients-logo-item"><img src="img/clients-logo-color.png" alt="clients logo" class="clients-logo"></a>
+            <a href="#" class="clients-logo-item"><img src="img/clients-logo-color.png" alt="clients logo" class="clients-logo"></a>
+            <a href="#" class="clients-logo-item"><img src="img/clients-logo-color.png" alt="clients logo" class="clients-logo"></a>
+            <a href="#" class="clients-logo-item"><img src="img/clients-logo-color.png" alt="clients logo" class="clients-logo"></a>
+            <a href="#" class="clients-logo-item"><img src="img/clients-logo-color.png" alt="clients logo" class="clients-logo"></a>
+            <a href="#" class="clients-logo-item"><img src="img/clients-logo-color.png" alt="clients logo" class="clients-logo"></a>
+            <a href="#" class="clients-logo-item"><img src="img/clients-logo-color.png" alt="clients logo" class="clients-logo"></a>
+            <a href="#" class="clients-logo-item"><img src="img/clients-logo-color.png" alt="clients logo" class="clients-logo"></a>
+            <a href="#" class="clients-logo-item"><img src="img/clients-logo-color.png" alt="clients logo" class="clients-logo"></a>
+            <a href="#" class="clients-logo-item"><img src="img/clients-logo-color.png" alt="clients logo" class="clients-logo"></a>
           </div>
         </div>
       </div>
