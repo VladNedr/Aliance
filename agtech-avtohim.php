@@ -73,7 +73,7 @@ include_once('./template-parts/header-images.php');?>
       <div class="clients-wrapper about-wrapper">
             <div class="clients-content about-clients-content">
               <div class="seporator"></div>
-              <h2 class="section-title ">Генеральный дистрибьютор премиальной автохимии</h2>
+              <h2 class="section-title fixed-title">Генеральный дистрибьютор премиальной автохимии</h2>
               <p class="about-production-text">Внезапно, активно развивающиеся страны третьего мира могут быть объявлены нарушающими общечеловеческие нормы этики и морали.</p>
               <ul class="clients-list">
                 <li class="clients-list-item">

@@ -1156,10 +1156,10 @@ body {
 }
 .agtech-button {
   display: flex;
-  gap: 10px;
+  gap: .625rem;
   align-items: center;
   justify-content: center;
-  margin-bottom: 100px;
+  margin-bottom: 6.25rem;
 }
 .agtech-bg-image {
   object-fit: contain;
@@ -1179,17 +1179,17 @@ body {
 .modern-social-text {
   display: block;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 160%;
   color: #828A99;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 .modern-social-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: .625rem;
 }
 .modern-social-link {
   border: 1px  solid  #EBEBF0;
@@ -1234,24 +1234,24 @@ body {
 }
 .modern-news-item {
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: .625rem;
 }
 .modern-news-item::before {
   content: "—";
-  margin-right: 10px;
+  margin-right: .625rem;
 }
 .modern-news-list-number {
   padding: 0;
-  padding-left: 15px;
+  padding-left: .9375rem;
 }
 .modern-news-item-number {
   margin: 0;
-  margin-bottom: 10px;
-  padding-left: 10px; 
+  margin-bottom: .625rem;
+  padding-left: .625rem; 
 
 }
 .modern-news-item-number::marker {
-  font-size: 16px;
+  font-size: 1rem;
   color: #5C8EE6;
 }
 
@@ -1318,6 +1318,10 @@ body {
   }
   .about-clients-content {
     max-width: 40rem;;
+  }
+  .agtech-bg-image {
+    width: 50rem;
+    height: 47rem;
   }
 }
 @media ( max-width: 1200px) {
@@ -1591,6 +1595,21 @@ body {
   .about-clients-content {
     max-width: 30rem;
   }
+  /* AVTOHIM.PHP  */ 
+  .header-content-images {
+    display: none;
+  }
+  .subheader-subimages {
+    width: 30rem;
+    height: 30rem;
+  }
+  .agtech-button {
+    margin-bottom: 3.125rem;
+  }
+  .fixed-title {
+    font-size: 3rem;
+  }
+
 }
 @media (max-width: 768px) {
   .container {
@@ -1680,7 +1699,20 @@ body {
   .blog-about-text:last-child {
     display: none;
   }
+  /* AVTOHIM.PHP  */
+  .subheader-subimages {
+    width: 100%;
+    object-fit: cover;
+  }
+  .prospects-text {
+    width: 100%;
+  }
+  /* AG-TECH.PHP  */
+  .agtech-bg-image {
+    display: none;
+  }
 }
+
 @media (max-width: 576px) {
   .container {
     max-width: 90%;
@@ -1818,6 +1850,13 @@ body {
   .footer-finish {
     flex-direction: column;
   }
+    /* AVTOHIM.PHP  */
+    .subheader {
+      margin-top: 0;
+    }
+    .about-features {
+      margin-top: 3.125rem;
+    }
 
 } 
 @media (max-width: 425px) {
