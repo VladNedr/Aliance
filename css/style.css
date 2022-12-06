@@ -1609,7 +1609,41 @@ body {
   .fixed-title {
     font-size: 3rem;
   }
-
+  
+  /* (NOT)HOVER EFFECT  */
+  .navbar-button:hover {
+    background: #3A71D1;
+  }
+  .header-button:hover {
+    background: #3A71D1;
+  }
+  .card:hover {
+    border: 1px solid #EBEBF0;
+  }
+  .card:hover .card-title {
+    color: #292D33;
+  }
+  .brand-blocks:hover {
+    border: 1px solid #EBEBF0;
+  }
+  .brand-blocks:hover .agtech-brand {
+    fill: #828A99;
+  }
+  .brand-blocks:hover .logo-brand {
+    fill: #828A99;
+  }
+  .brand-blocks:hover .brand-title {
+    color: #292D33;
+  }
+  .clients-logo-item:hover {
+    border: 1px solid #EBEBF0;
+  }
+  .modern-social-link:hover {
+    border: 1px solid #EBEBF0;
+  }
+  .clients-logo-item:hover .clients-logo {
+    filter: grayscale(1);
+  }
 }
 @media (max-width: 768px) {
   .container {
