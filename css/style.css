@@ -115,7 +115,7 @@ body {
   align-items: center;
   flex-shrink: 0;
   gap: .625rem;
-  margin-right: 2.5rem;
+  margin-right: 3rem;
 }
 .phone-svg {
   fill: #5C8EE6;
@@ -236,6 +236,7 @@ body {
   display: flex;
   min-height: 10.5rem;
   margin-top: 6.25rem;
+  margin-bottom: 0;
   list-style: none;
   padding: 0;
 }
@@ -258,7 +259,7 @@ body {
   margin-bottom: 9.375rem;
 }
 .section-light {
- margin: 8.375rem 0rem 6.850rem 1.375rem;
+ margin: 9.4rem 0rem 6.850rem 1.375rem;
 }
 .section-title {
   font-family: 'Bebas Neue Book';
@@ -316,6 +317,7 @@ body {
   line-height: 160%;
   color: #5C8EE6;
   text-decoration: none;
+  cursor: pointer;
 }
 .button-link::before {
   content: "";
@@ -346,13 +348,13 @@ body {
   transition: border 0.2s;
 }
 .card:hover {
-  border: 3px solid #5C8EE6;
+  border: 1px solid #5C8EE6;
 }
 .card:hover .card-title {
   color: #5C8EE6;
 }
 .card-content {
-  padding: 1.875rem 3.125rem;
+  padding: 2.6rem 2rem 1rem 3.2rem;
 }
 .card-title {
   font-weight: 400;
@@ -379,7 +381,7 @@ body {
   bottom: 0;
 }
 .brand {
-  margin: 7.4rem 0 6rem 1.375rem
+  margin: 10rem 0 6rem 1.375rem
 }
 .section-title-brand {
   margin-bottom: 3.5rem;
@@ -392,6 +394,7 @@ body {
   flex-basis: 50%;
   border: 1px solid #EBEBF0;
   padding: 3.125rem;
+  padding-bottom: 4.4375rem;
   column-gap: 3.125rem;
   text-decoration: none;
   transition: 0.2s all;
@@ -404,7 +407,7 @@ body {
   "logo text text";
 }
 .brand-blocks:hover {
-  border: 3px solid #5C8EE6;
+  border: 1px solid #5C8EE6;
 }
 .agtech-brand, .logo-brand {
   fill: #828A99;
@@ -439,14 +442,14 @@ body {
 }
 .founder {
   position: relative;
-  padding-top: 4.5rem;
+  padding-top: 3.3rem;
   min-height: 41.25rem;
 }
 .founder-photo {
   position: absolute;
   left: 0;
   top: 0;
-  width: 45%;
+  width: 44.3%;
   height: 100%;
   object-fit: cover;
 }
@@ -469,12 +472,12 @@ body {
   margin-bottom: 1.875rem;
 }
 .clients {
-  margin-top: 10.7rem;
+  margin-top: 9rem;
   margin-left: 1.25rem;
 }
 .clients-wrapper {
   display: flex;
-  gap: 3.125rem;
+  gap: 1rem;
 }
 .clients-content {
   flex-basis: 50%;
@@ -499,7 +502,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   flex-shrink: 10;
-  margin-top: 1.875rem;
+  padding-top: 2rem;
 }
 .clients-logo-item {
   display: flex;
@@ -507,11 +510,11 @@ body {
   justify-content: center;
   flex-basis: 33%;
   border: 1px solid #EBEBF0;
-  padding: 1rem;
+  padding: 2.7rem 1rem;
   transition: all 0.2s;
 }
 .clients-logo-item:hover {
-  border: 2px solid #5C8EE6;
+  border: 1px solid #5C8EE6;
 }
 .clients-logo {
   max-width: 100%;
@@ -525,7 +528,7 @@ body {
   filter: grayscale(0);
 }
 .blog {
-  margin-top: 11.25rem;
+  margin-top: 9.6rem;
   margin-left: 1.25rem;
 }
 .blog-title {
@@ -535,6 +538,7 @@ body {
   display: flex;
   height: 60px;
   justify-content: flex-end;
+  cursor: pointer;
 }
 .blog-button-prev,
 .blog-button-next {
@@ -615,10 +619,10 @@ body {
 .cta-form-wrapper {
   display: flex;
   justify-content: flex-end;
-  padding-right: 8rem;
 }
 .cta-form {
   max-width: 52.5rem;
+  padding-left: .625rem;
 }
 .cta-form-title {
   font-weight: 500;
@@ -634,16 +638,19 @@ body {
   line-height: 160%;
   color: #828A99;
   margin: 0;
-  margin-bottom: 3.5rem;
+  margin-bottom: 3rem;
   max-width: 40rem;
 }
 .input-group-wrapper {
   display: flex;
-  gap: 30px;
+  gap: 1.875rem;
+  width: 52.5rem;
 }
 .input-group-vertical {
   display: flex;
   flex-direction: column;
+  gap: 1.875rem;
+  width: 100%;
 }
 .input-group {
   position: relative;
@@ -700,15 +707,14 @@ body {
   transform: translateY(-50%);
 }
 .cta-form-footer {
-  margin-top: 1.6rem;
+  margin-top: 2rem;
   display: flex;
   align-items: center;
-  justify-content: center;
   gap: 1.875rem;
 }
 .cta-button {
   flex-shrink: 0;
-  padding: 1.1875rem 3.75rem;
+  padding: 1.1875rem 2.7rem;
 }
 .notify {
   display: flex;
@@ -735,6 +741,8 @@ body {
 .logo-footer {
   width: 12.5rem;
   height: 3.75rem;
+  margin-left: .625rem;
+  margin-right: 5.3125rem;
 }
 .footer-phone {
   font-weight: 600;
@@ -742,6 +750,7 @@ body {
   line-height: 160%;
   text-decoration-line: underline;
   color: #292D33;
+  margin-right: 1.125rem;
 }
 .footer-info {
   display: flex;
@@ -800,6 +809,10 @@ body {
   font-size: 1rem;
   line-height: 160%;
   color: #828A99;
+  transition: color 0.2s;
+}
+.footer-menu-link:hover {
+  color: #5C8EE6;
 }
 .footer-link-bold {
   font-style: normal;
@@ -809,6 +822,10 @@ body {
   color: #292D33;
   display: block;
   margin-bottom: 1.875rem;
+  transition: color 0.2s;
+}
+.footer-link-bold:hover {
+  color:#3A71D1;
 }
 .footer-menu-wrapper:last-child {
   margin-left: 10.6rem;
@@ -832,6 +849,10 @@ body {
   line-height: 160%;
   color: #828A99;
   padding-left: 10px;
+  transition: color 0.2s;
+}
+.footer-policy:hover {
+  color:#000;
 }
 .made-in {
   font-size: .75rem;
@@ -1259,8 +1280,12 @@ body {
   html {
     font-size: 14px;
   }
-  .cta-form-wrapper {
-    padding-right: 8rem;
+  .logo-footer {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .footer-phone {
+    margin-right: 0;
   }
 }
 @media ( max-width: 1550px) {
@@ -1322,6 +1347,9 @@ body {
   .agtech-bg-image {
     width: 50rem;
     height: 47rem;
+  }
+  .input-group-wrapper {
+    width: 45rem;
   }
 }
 @media ( max-width: 1200px) {
@@ -1386,6 +1414,20 @@ body {
   .about-clients-content {
     max-width: 35rem;
   }
+  .modern-wrapper {
+    flex-direction: column;
+  }
+  .modern-social-wrapper {
+    justify-content: flex-start;
+    margin-bottom: 3.125rem;
+  }
+  .modern-news {
+    width: 100%;
+  }
+  .modern-news-image {
+    width: 100%;
+    height: 100%;
+  }
 }
 @media (max-width: 1024px) {
   .steps-buttons {
@@ -1402,6 +1444,27 @@ body {
 @media ( max-width: 992px) {
   html {
     font-size: 11px;
+  }
+  a {
+    cursor: default;
+  }
+  button {
+    cursor: default;
+  }
+  .button {
+    cursor: default;
+  }
+  .blog-buttons {
+    cursor: default;
+  }
+  .button-link {
+    cursor: default;
+  }
+  .brand-blocks {
+    cursor: default;
+  }
+  .slider-button-prev, .slider-button-next {
+    cursor: default;
   }
   .container {
     max-width: 60rem;
@@ -1564,6 +1627,7 @@ body {
   .input-group-wrapper {
     flex-direction: column;
     gap: 1.25rem;
+    width: 100%;
   }
   .cta-form-footer {
     flex-direction: column;
@@ -1643,6 +1707,18 @@ body {
   }
   .clients-logo-item:hover .clients-logo {
     filter: grayscale(1);
+  }
+  .footer-menu-link:hover {
+    color: #828A99;
+  }
+  .footer-link-bold:hover {
+    color: #292D33;
+  }
+  .footer-policy:hover {
+    color: #828A99;
+  }
+  .button-link:hover::before {
+    width: 2.5rem;
   }
 }
 @media (max-width: 768px) {
@@ -1883,6 +1959,9 @@ body {
   }
   .footer-finish {
     flex-direction: column;
+  }
+  .header-blog-title-white  {
+    font-size: 3rem;
   }
     /* AVTOHIM.PHP  */
     .subheader {

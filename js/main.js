@@ -182,8 +182,8 @@ forms.forEach((form) => {
       },
       {
         rule: "minLength",
-        value: 11,
-        errorMessage: "Минимально 8 цифр",
+        value: 18,
+        errorMessage: "Неверно набран номер",
       },
     ])
     .onSuccess((event) => {
@@ -196,8 +196,9 @@ forms.forEach((form) => {
         }).then((response) => {
           if (response.ok) {
             thisForm.reset();
-            // поменять на свою форму
-            currentModal.classList.remove("is-open");
+            if (currentModal) {
+              currentModal.classList.remove("is-open");
+            }
             alertModal.classList.add("is-open");
             currentModal = alertModal;
             modalDialog = currentModal.querySelector(".modal-dialog");
@@ -218,10 +219,12 @@ forms.forEach((form) => {
     });
 });
 
-let modalThanksButton = document.querySelector('.modal-thanks-button');
+// При клике на кнопку в окне благодарности, возвращает на страницу!
+let modalThanksButton = document.querySelector(".modal-thanks-button");
 modalThanksButton.addEventListener("click", (event) => {
   window.location.reload();
 });
+
 
 /* Создаем префикс +7, даже если вводят 8 или 9 */
 const prefixNumber = (str) => {
