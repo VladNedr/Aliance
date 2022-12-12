@@ -2,6 +2,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="img/favicons.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicons.ico" type="image/x-icon">
     <script>
       /*! modernizr 3.6.0 (Custom Build) | MIT *
       * https://modernizr.com/download/?-webp-setclasses !*/

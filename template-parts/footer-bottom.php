@@ -2,9 +2,11 @@
       <hr class="footer-seporator">
       <div class="container">
         <div class="footer-top">
-          <svg class="logo-svg logo-footer" >
-            <use href="img/sprite.svg#logo"></use>
-          </svg>
+          <a href="#">
+            <svg class="logo-svg logo-footer" >
+              <use href="img/sprite.svg#logo"></use>
+            </svg>
+          </a>
           <a href="tel:+74996861014" class="footer-phone">+7 (999) 686-10-14</a>
           <div class="footer-info">
             <svg class="map-icon" width="16px" height="16px">
