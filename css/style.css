@@ -395,7 +395,8 @@ body {
   border: 1px solid #EBEBF0;
   padding: 3.125rem;
   padding-bottom: 4.4375rem;
-  column-gap: 3.125rem;
+  -moz-column-gap: 3.125rem;
+       column-gap: 3.125rem;
   text-decoration: none;
   transition: 0.2s all;
   cursor: pointer;
@@ -451,7 +452,8 @@ body {
   top: 0;
   width: 44.3%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .founder-content-wrapper {
   display: flex;
@@ -487,7 +489,8 @@ body {
 }
 .clients-list {
   list-style: none;
-  columns: 2 auto;
+  -moz-columns: 2 auto;
+       columns: 2 auto;
   padding: 0;
 }
 .clients-list-item {
@@ -522,10 +525,12 @@ body {
   height: 4.375rem;
 }
 .clients-logo {
-  filter: grayscale(1);
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
 }
 .clients-logo-item:hover .clients-logo {
-  filter: grayscale(0);
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
 }
 .blog {
   margin-top: 9.6rem;
@@ -577,7 +582,8 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   z-index: -2;
 }
 .blog-card-title {
@@ -748,7 +754,8 @@ body {
   font-weight: 600;
   font-size: 2rem;
   line-height: 160%;
-  text-decoration-line: underline;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
   color: #292D33;
   margin-right: 1.125rem;
 }
@@ -797,7 +804,8 @@ body {
   padding-left: 1.25rem;
 }
 .footer-menu-column-2 {
-  columns: 20rem auto;
+  -moz-columns: 20rem auto;
+       columns: 20rem auto;
   min-width: 45rem;
 }
 .footer-menu-item {
@@ -1061,7 +1069,8 @@ body {
   position: absolute;
   top: 0;
   right: 0;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .avtohim-production-image {
   width: 52.5rem;
@@ -1154,7 +1163,8 @@ body {
 .prospects-list {
   list-style-type: none;
   padding: 0;
-  columns: 4 19rem;
+  -moz-columns: 4 19rem;
+       columns: 4 19rem;
   margin-top: 3.125rem;
 }
 .prospects-item {
@@ -1183,7 +1193,8 @@ body {
   margin-bottom: 6.25rem;
 }
 .agtech-bg-image {
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
   width: 54rem;
   height: 42rem;
 }
@@ -1247,7 +1258,8 @@ body {
 .modern-news-image {
   width: 59.375rem;
   height: 34.375rem;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .modern-news-list {
   list-style-type: none;
@@ -1409,7 +1421,8 @@ body {
   }
   .about-production-image {
     width: 45%;
-    object-fit: contain;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
   .about-clients-content {
     max-width: 35rem;
@@ -1570,7 +1583,8 @@ body {
     font-weight: 600;
     font-size: 1.25rem;
     line-height: 160%;
-    text-decoration-line: underline;
+    -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
     color: #292D33;
     padding-top: 2rem;
     border-top: 1px solid  #EBEBF0;
@@ -1649,7 +1663,8 @@ body {
     gap: .3125rem;
   }
   .footer-menu-column-2 {
-    columns: 2 auto;
+    -moz-columns: 2 auto;
+         columns: 2 auto;
     min-width: 35rem;
   }
   .subheader-image {
@@ -1706,7 +1721,8 @@ body {
     border: 1px solid #EBEBF0;
   }
   .clients-logo-item:hover .clients-logo {
-    filter: grayscale(1);
+    -webkit-filter: grayscale(1);
+            filter: grayscale(1);
   }
   .footer-menu-link:hover {
     color: #828A99;
@@ -1771,7 +1787,8 @@ body {
     margin-bottom: .625rem;
   }
   .footer-menu-column-2 {
-    columns: 1 auto;
+    -moz-columns: 1 auto;
+         columns: 1 auto;
     min-width: 18rem;
   }
   .footer-menu-wrapper:last-child  {
@@ -1801,7 +1818,8 @@ body {
   .about-production-image {
     position: inherit;
     width: 100%;
-    object-fit: fill;
+    -o-object-fit: fill;
+       object-fit: fill;
   }
   .about-clients-content {
     max-width: 45rem;
@@ -1812,7 +1830,8 @@ body {
   /* AVTOHIM.PHP  */
   .subheader-subimages {
     width: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .prospects-text {
     width: 100%;
@@ -1864,7 +1883,8 @@ body {
     grid-template-areas: "logo title" "text text";
   }
   .clients-list {
-    columns: 1;
+    -moz-columns: 1;
+         columns: 1;
   }
   .clients-logo-item {
     flex-basis: 50%;
